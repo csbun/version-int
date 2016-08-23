@@ -7,7 +7,8 @@
     "build": "babel index.js -o index.dist.js",
     "build-watch": "babel index.js -wo index.dist.js",
     "test": "mocha",
-    "test-watch": "mocha -w"
+    "test-watch": "mocha -w",
+    "doc": "jsdoc2md --template README.hbs index.js > README.md"
   },
   "repository": {
     "type": "git",

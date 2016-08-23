@@ -11,7 +11,6 @@ function tryParseInt(str) {
   try {
     return parseInt(str, 10);
   } catch (e) {
-    console.log(e);
     // DO NOTHING
   }
   return 0;
@@ -31,6 +30,17 @@ function lefPadZero(originStr, digitLength) {
   return str.substr(0, realDigit);
 }
 
+/**
+ * parse a version string into a number
+ * @param  {string} versionStr  version string
+ * @param  {number} [digitLength] how long each sub-version is, default: 3
+ * @return {number}             version number
+ * @example
+ * versionint.parse('1.1.1');    // 1001001
+ * versionint.parse('1.1.1', 1); // 111
+ * versionint.parse('1.1.1', 2); // 10101
+ * versionint.parse('1.2.3456', 3); // 1001345
+ */
 function parse(versionStr, digitLength) {
   var versionArr = ('' + versionStr).split('.').map(function (str) {
     return lefPadZero(str, digitLength);
@@ -38,6 +48,14 @@ function parse(versionStr, digitLength) {
   return tryParseInt(versionArr.join(''));
 }
 
+/**
+ * set/update default digitLength
+ * @param {number} digitLength how long each sub-version is, default: 3
+ * @example
+ * versionint.parse('1.1.1'); // 1001001
+ * versionint.setDigit(1);
+ * versionint.parse('1.1.1'); // 111
+ */
 function setDigit(digitLength) {
-  digit = typeof digitLength === 'number' && digitLength > 0 ? digitLength : 1;
+  digit = typeof digitLength === 'number' && digitLength > 0 ? digitLength : 3;
 }
