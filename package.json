@@ -1,0 +1,35 @@
+{
+  "name": "version-int",
+  "version": "0.0.0",
+  "description": "parse a version string to int",
+  "main": "index.dist.js",
+  "scripts": {
+    "build": "babel index.js -o index.dist.js",
+    "build-watch": "babel index.js -wo index.dist.js",
+    "test": "mocha",
+    "test-watch": "mocha -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csbun/version-int.git"
+  },
+  "keywords": [
+    "parse",
+    "version",
+    "string",
+    "int"
+  ],
+  "author": "Hans Chan <icsbun@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/csbun/version-int/issues"
+  },
+  "homepage": "https://github.com/csbun/version-int#readme",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "eslint": "^3.3.1",
+    "eslint-config-airbnb-base": "^5.0.3",
+    "eslint-plugin-import": "^1.14.0",
+    "mocha": "^3.0.2"
+  }
+}
