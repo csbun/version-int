@@ -3,16 +3,16 @@ parse a version string to int
 
 ## API
 
-* [version-int](#module_version-int)
-    * [.parse(versionStr, [digitLength])](#module_version-int.parse) ⇒ <code>number</code>
-    * [.setDigit([digitLength])](#module_version-int.setDigit)
+* [versionInt](#module_versionInt)
+    * [.parse(versionStr, [digitLength])](#module_versionInt.parse) ⇒ <code>number</code>
+    * [.setDigit([digitLength])](#module_versionInt.setDigit)
 
-<a name="module_version-int.parse"></a>
+<a name="module_versionInt.parse"></a>
 
-### version-int.parse(versionStr, [digitLength]) ⇒ <code>number</code>
+### versionInt.parse(versionStr, [digitLength]) ⇒ <code>number</code>
 parse a version string into a number
 
-**Kind**: static method of <code>[version-int](#module_version-int)</code>  
+**Kind**: static method of <code>[versionInt](#module_versionInt)</code>  
 **Returns**: <code>number</code> - version number  
 
 | Param | Type | Default | Description |
@@ -27,12 +27,12 @@ versionInt.parse('1.1.1', 1); // 111
 versionInt.parse('1.1.1', 2); // 10101
 versionInt.parse('1.2.3456', 3); // 1001345
 ```
-<a name="module_version-int.setDigit"></a>
+<a name="module_versionInt.setDigit"></a>
 
-### version-int.setDigit([digitLength])
+### versionInt.setDigit([digitLength])
 set/update default digitLength
 
-**Kind**: static method of <code>[version-int](#module_version-int)</code>  
+**Kind**: static method of <code>[versionInt](#module_versionInt)</code>  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |

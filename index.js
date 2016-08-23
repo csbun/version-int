@@ -1,7 +1,7 @@
 /**
  * # version-int
  * parse a version string to int
- * @module version-int
+ * @module versionInt
  */
 let digit = 3;
 
