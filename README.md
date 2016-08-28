@@ -1,10 +1,9 @@
+# version-int
+parse a version string to int
 
 [![npm version](https://badge.fury.io/js/version-int.svg)](https://github.com/csbun/version-int)
 [![Build Status](https://travis-ci.org/csbun/version-int.svg?branch=master)](https://travis-ci.org/csbun/version-int)
 [![Coverage Status](https://coveralls.io/repos/github/csbun/version-int/badge.svg?branch=master)](https://coveralls.io/github/csbun/version-int?branch=master)
-
-# version-int
-parse a version string to int
 
 ## API
 
