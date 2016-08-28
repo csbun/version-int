@@ -4,7 +4,6 @@
   "description": "parse a version string to int",
   "main": "index.dist.js",
   "scripts": {
-    "prepublish": "npm test && npm run doc",
     "build": "babel index.js -o index.dist.js",
     "build-watch": "babel index.js -wo index.dist.js",
     "test": "eslint index.js && mocha",
