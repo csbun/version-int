@@ -7,7 +7,7 @@
     "build": "babel index.js -o index.dist.js",
     "build-watch": "babel index.js -wo index.dist.js",
     "test": "eslint index.js && mocha",
-    "ci": "istanbul cover mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
+    "ci": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
     "test-watch": "mocha -w",
     "doc": "jsdoc2md --template README.hbs index.js > README.md"
   },
